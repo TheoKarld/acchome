@@ -18,7 +18,7 @@ var version='1.0.0',
 	//mongo=require('mongodb').MongoClient,
 	idx=['admindl','message','sender','donation'],ll='',fma=['Name','Phone number','Email','Message'],dna=['Name','Email','Address','Donation'],XA=[['confirm','acknowledge'],['read','reply']],
 	nodemailer=require('nodemailer'),
-	kwport = nodemailer.createTransport({host:"smtp.gmail.com",port:465,secure:true,auth:{user:"douglaspeters488@gmail.com",pass:"3333355555"}}),
+	kwport = nodemailer.createTransport({host:"smtp.gmail.com",port:465,secure:true,auth:{user:"dashekarld@gmail.com",pass:"theophilus"}}),
 	ppe='bernardarinze007@gmail.com',mem='douglaspeters488@gmail.com';
 	
 	
