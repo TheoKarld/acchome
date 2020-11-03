@@ -1,0 +1,37 @@
+{
+  "name": "acc",
+  "version": "1.0.0",
+  "description": "An online donation platform aimed at reaching out to widows and orphans around africa",
+  "main": "accserver.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongodb": "^3.5.7",
+    "mongodb-client": "^0.0.1",
+    "nodemailer": "^6.4.14",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node accserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoKarld/acchome.git"
+  },
+  "keywords": [
+    "widow",
+    "orphans",
+    "african",
+    "child",
+    "care",
+    "donation"
+  ],
+  "author": "Africa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheoKarld/acchome/issues"
+  },
+  "homepage": "https://github.com/TheoKarld/acchome#readme"
+}

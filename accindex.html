@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<link rel='icon' href='img/accicon.png' />
+<link rel='stylesheet' type='text/css' href='css/scrollbar.css' />
+<meta charset='UTF-8'>
+<meta http-equiv='X-UA-Compatible' content='IE-edge'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>African Child Care</title>
+<link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+<link rel='stylesheet' type='text/css' href='css/styleit.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type='text/javascript' src='js/basic.boot.js'></script>
+<script type='text/javascript' src='js/ffo.js'></script>
+<script type='text/javascript' src='socket.js'></script>
+<script type='text/javascript'>
+var VP=DIV('viewpoint','container'),WV='',Mng=false,XC='',socket=io(),name='AFRICAN CHILD CARE.',moto='Reaching out to Widows and Orphans in Need.',Men=['Home','Contact','About','Donate'],sor={},fma=['Name','Phone number','Email','Message'],acro='ACC';
+
+addEvent(window,'load',function(){
+	var bod=document.body;
+	sor.h=screen.availHeight;
+	sor.w=screen.availWidth;
+	fit2scrn(bod);
+	APP(bod,VP);
+	fit2scrn(VP);
+	kick.gear();
+	//myEditor(ebt('style')[0],bod);
+	
+});
+
+</script>
+<style type='text/css'>
+
+
+
+#viewpoint {overflow-x:hidden;overflow-y:scroll;padding:0;}
+.colbox {padding:0;}
+.inliner {display:inline-block;}
+#hmediv {background:url(img/ai1.jpg);background-size:100% 100%;}
+#nasdv {background:transparent;padding:10px;color:white;}
+#cname {font:35px arial;}
+.nas-logo {width:8em;}
+#nas-moto {font:14px arial;}
+#navicol {margin-top:9%;min-width:28em;}
+#lm-menu {background:transparent;border:0;padding:0;margin-right:1em;}
+#sx-menu {background:url(img/btrans.png);border:0;}
+#lm-menu ul {position:absolute;right:1em;}
+#lm-menu a {color:white;font:15.3px arial;}
+#lm-menu li {margin-left:1em;width:5em;opacity:.8;transition:opacity .2s;}
+#lm-menu li:hover {opacity:1;}
+#welnote {background:url(img/wtrans.png);background-size:100% 100%;}
+#wel-h {color:#56331d;font:90px fantasy;text-align:center;}
+#welpar {padding:1em;text-indent:1em;width:80%;margin:auto;font:30px san seriff;color:#332802;background:white;opacity:.7}
+#myaim {overflow:hidden;background:transparent;}
+#myaim .colbox {padding:1em;overflow:hidden;background:#ff6a00;color:white;margin:2%;}
+#aic-h {text-align:center;font:70px seriff;font-weight:bold;color:white;}
+#myaim p {text-indent:2em;font:16px arial;}
+#myaim .colbox h1 {text-align:center;text-decoration:underline;font:25px arial;}
+#contdv{background:url(img/ai7.jpg);background-size:100% 100%;}
+#msgform {overflow:hidden;background:url(img/btrans.png);background-size:100% 100%;color:white;width:90%;margin:auto;}
+#msfm-ws {width:90%;}
+#mf-h {font:60px arial;}
+#msfm-hd small {color:white;margin-left:1.5em;}
+#msfm-ws label {font:20px arial}
+#msfm-ws input {font:17px arial;height:2.5em;}
+#msfm-ws small {color:white;font:14px arial;}
+#msfm-ws textarea {height:12em;}
+#msfm-ws .form-group {margin-top:1.7em;}
+#morecontact {margin-top:5em;min-height:20em;background:#f59f00;margin-bottom:0;border-radius:0;overflow:hidden;padding:1em;}
+#aboutdv {background:url(img/ai8.jpg);background-size:100% 100%;}
+#abt-stn {background:url(img/btrans.png);color:white;}
+#abot-h {text-align:center;font:90px normal;}
+#about-txt {padding:1em;width:90%;margin:auto;text-indent:1.2em;font:29px normal;}
+#watwemin {background:transparent;}
+#wat-h {color:white;font:90px normal;}
+#about-ul {max-width:55em;}
+#about-ul .form-group {margin-bottom:1em;padding:.5em;overflow:hidden;background:url(img/wtrans.png);text-indent:.6em;border-radius:.2em;}
+#about-ul a {color:white;font:25px normal;}
+#dntjum {overflow:hidden;background:url(img/btrans.png);}
+#donatedv {background:url(img/ai3.jpg);background-size:100% 100%;}
+#dont-h {font:80px normal;}
+#dnth-p {text-indent:1em;font:28px normal;color:#ffe2ae;}
+#dont-txt {font:23px normal;color:white;text-indent:1em;}
+#dtfmd {overflow:hidden;background:url(img/wtrans.png);}
+#dotform {overflow:hidden;background:url(img/wtrans2.png);}
+#popa {position:fixed;z-index:99;background:url(img/gtrans.png);}
+#popbox {position:absolute;width:40em;margin:auto;top:0;bottom:0;left:0;right:0;max-height:24em;padding:.4em;}
+#pop-h {text-align:center;font:50px normal;text-decoration:underline;}
+#poptxjm {max-height:14em;font:16px normal;padding:0;overflow:hidden;}
+#pop-tx {margin-top:1em;margin-left:.5em;text-indent:.5em;}
+#popkeyjm {background:red;padding:0;width:4em;margin:auto;}
+#navicol a {background:transparent;}
+#sx-menu .btn {width:7em;display:inline-block;margin-right:1em;}
+#donacct {background:url(img/ai9.jpg);background-size:100% 100%;}
+#act-h {color:white;text-indent:1em;font:80px arial;}
+#act-emd {background:url(img/gtrans.png);margin:auto;margin-bottom:3em;}
+#act-eh {color:white;font:50px normal;}
+#act-email {color:white;text-align:center;font:55px normal;text-decoration:underline;}
+#acct-keys {width:35em;margin:auto;background:url(img/wtrans.png);margin-bottom:10em;}
+#acct-keys .btn {margin:1em;}
+#dnact-hd {background:url(img/btrans.png);margin:0;overflow:hidden;}
+.fa, .fab, .fad, .fal, .far, .fas {-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing:antialiased;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;line-height: 1;}
+#icosp {margin-right:.3em;font-size:55px;}
+#socialbox {position:relative;margin:auto;width:80%;}
+#soc-h {color:white;font:30px normal;}
+#soc-buts {background:transparent;}
+#soc-buts a {color:white;margin-left:3em;}
+</style>
+</head>
+<body>
+
+</body>
+</html>
