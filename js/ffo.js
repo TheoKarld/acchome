@@ -253,7 +253,7 @@ var carbox=function(t){
 	
 }
 var nas=function(){
-	var im=img('img/acclogo.png','','nas-logo inliner'),nm=hea(1,name,'cname','inliner'),hc=par([im,nm],'nas-hc'),mo=par(moto,'nas-moto'),rd=colbox('nascol',6,6,12,12,[jum('nasdv',[hc,mo])]);
+	var im=img('img/logo1.png','','nas-logo inliner'),nm=hea(1,name,'cname','inliner'),hc=par([im,nm],'nas-hc'),mo=par(moto,'nas-moto'),rd=colbox('nascol',6,6,12,12,[jum('nasdv',[hc,mo])]);
 	return rd;
 }
 var navi=function(m){
