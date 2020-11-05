@@ -160,7 +160,7 @@ var donform=function(){
 }
 var donatedv=function(){
 	if(!ffo.dtfm)donform();
-	var hd=pagehed(3,'donate-hd'),dth=pah('dont-hd',[hea(1,'Support a Child Today','dont-h'),par('Every child deserves the support of the society','dnth-p')]),dnt=par(dtx,'dont-txt'),dtd=colbox('dont-td',6,6,12,12,[dth,dnt]),fmd=colbox('donfmhol',6,6,12,12,[jum('dtfmd',[ffo.dtfm])]),dnw=jum('dntjum',[dtd,fmd]),ws=colbox('dont-ws',12,12,12,12,[dnw,morecont()]),rd=colbox('donatedv',12,12,12,12,[hd,ws]);
+	var hd=pagehed(3,'donate-hd'),dth=pah('dont-hd',[rigiya('lm','',[hea(1,'Support a Child Today','dont-h'),par('Every child deserves the support of the society','dnth-p')]),rigiya('sx','',[hea(1,'Support a Child Today','dont-sh'),par('Every child deserves the support of the society','dnth-sp')])]),dnt=par(dtx,'dont-txt'),dtd=colbox('dont-td',6,6,12,12,[dth,dnt]),fmd=colbox('donfmhol',6,6,11,11,[jum('dtfmd',[ffo.dtfm])]),dnw=jum('dntjum',[dtd,fmd]),ws=colbox('dont-ws',12,12,12,12,[dnw,morecont()]),rd=colbox('donatedv',12,12,12,12,[hd,ws]);
 	fit2scrn(rd);
 	ffo.don=rd;
 	
@@ -183,7 +183,7 @@ var morecont=function(){
 	return rd;
 }
 var aboutdv=function(){
-	var mx='About ME'+' ('+acro+')',hd=pagehed(2,'about-hd'),aph=pah('abot-he',[hea(1,mx,'abot-h')]),atp=par(abn,'about-txt'),awd=jum('abt-stn',[aph,atp]),sh=pah('wat-hd',[hea(2,'What We Mean.','wat-h')]),ul=plist('about-ul','form',{d:'form-group'},get),wd=jum('watwemin',[sh,ul.u]),mc=morecont(),ws=colbox('about-ws',12,12,12,12,[awd,wd,mc]),rd=colbox('aboutdv',12,12,12,12,[hd,ws]);
+	var mx='About ME'+' ('+acro+')',hd=pagehed(2,'about-hd'),aph=pah('abot-he',[rigiya('lm','',[hea(1,mx,'abot-h')]),rigiya('sx','',[hea(4,mx,'abot-sh')])]),atp=par(abn,'about-txt'),awd=jum('abt-stn',[aph,atp]),sh=pah('wat-hd',[rigiya('lm','',[hea(2,'What We Mean.','wat-h')]),rigiya('sx','',[hea(4,'What We Mean.','wat-sh')])]),ul=plist('about-ul','form',{d:'form-group'},get),wd=jum('watwemin',[sh,ul.u]),mc=morecont(),ws=colbox('about-ws',12,12,12,12,[awd,wd,mc]),rd=colbox('aboutdv',12,12,12,12,[hd,ws]);
 	fit2scrn(rd);
 	ffo.huib=rd;
 	
