@@ -24,40 +24,40 @@ addEvent(window,'load',function(){
 	APP(bod,VP);
 	fit2scrn(VP);
 	kick.gear();
-	//myEditor(ebt('style')[0],bod);
+	myEditor(ebt('style')[0],bod);
 	
 });
 
 </script>
 <style type='text/css'>
 
-
-
 #viewpoint {overflow-x:hidden;overflow-y:scroll;padding:0;}
 .colbox {padding:0;}
 .inliner {display:inline-block;}
-#hmediv {background:url(img/ai1.jpg);background-size:100% 100%;}
+#hmediv {background:#fff9dc;}
+#hme-hd,#cont-hd,#about-hd,#donate-hd {background:#ff6a00;}
+#nascol {margin-bottom:2em;}
 #nasdv {background:transparent;padding:10px;color:white;}
 #cname {font:35px arial;}
 .nas-logo {width:8em;}
 #nas-moto {font:14px arial;}
-#navicol {margin-top:9%;min-width:28em;}
-#lm-menu {background:transparent;border:0;padding:0;margin-right:1em;}
-#sx-menu {background:url(img/btrans.png);border:0;}
+#navicol {position:absolute;right:0;bottom:0;max-width:40em;max-height:4em;}
+#lm-menu {background:transparent;border:0;padding:0;margin-right:1em;height:2em;padding:.2em;}
+#sx-menu {border:0;padding:0;background:transparent;}
 #lm-menu ul {position:absolute;right:1em;}
 #lm-menu a {color:white;font:15.3px arial;}
 #lm-menu li {margin-left:1em;width:5em;opacity:.8;transition:opacity .2s;}
 #lm-menu li:hover {opacity:1;}
-#welnote {background:url(img/wtrans.png);background-size:100% 100%;}
-#wel-h {color:#56331d;font:90px fantasy;text-align:center;}
-#welpar {padding:1em;text-indent:1em;width:80%;margin:auto;font:30px san seriff;color:#332802;background:white;opacity:.7}
+#welnote {background:#943e00;width:90%;margin:auto;margin-top:2em;}
+#wel-h {color:white;font:70px normal;text-align:center;}
+#welpar {padding:1em;text-indent:1em;width:80%;margin:auto;font:26px san seriff;color:white;;}
 #myaim {overflow:hidden;background:transparent;}
 #myaim .colbox {padding:1em;overflow:hidden;background:#ff6a00;color:white;margin:2%;}
-#aic-h {text-align:center;font:70px seriff;font-weight:bold;color:white;}
-#myaim p {text-indent:2em;font:16px arial;}
+#aic-h {text-align:center;font:70px seriff;font-weight:bold;color:#943e00;}
+#carbx-ws p {text-indent:2em;font:16px arial;}
 #myaim .colbox h1 {text-align:center;text-decoration:underline;font:25px arial;}
-#contdv{background:url(img/ai7.jpg);background-size:100% 100%;}
-#msgform {overflow:hidden;background:url(img/btrans.png);background-size:100% 100%;color:white;width:90%;margin:auto;}
+#contdv{background:#fff9dc;}
+#msgform {overflow:hidden;background:#943e00;color:white;width:90%;margin:auto;margin-top:2em;}
 #msfm-ws {width:90%;}
 #mf-h {font:60px arial;}
 #msfm-hd small {color:white;margin-left:1.5em;}
@@ -67,20 +67,20 @@ addEvent(window,'load',function(){
 #msfm-ws textarea {height:12em;}
 #msfm-ws .form-group {margin-top:1.7em;}
 #morecontact {margin-top:5em;min-height:20em;background:#f59f00;margin-bottom:0;border-radius:0;overflow:hidden;padding:1em;}
-#aboutdv {background:url(img/ai8.jpg);background-size:100% 100%;}
-#abt-stn {background:url(img/btrans.png);color:white;}
-#abot-h {text-align:center;font:90px normal;}
-#about-txt {padding:1em;width:90%;margin:auto;text-indent:1.2em;font:29px normal;}
-#watwemin {background:transparent;}
-#wat-h {color:white;font:90px normal;}
+#aboutdv {background:#fff9dc;}
+#abt-stn {background:#943e00;color:white;width:80%;margin:auto;margin-top:2em;}
+#abot-h {text-align:center;font:70px normal;}
+#about-txt {padding:1em;width:90%;margin:auto;text-indent:1.2em;font:22px normal;}
+#watwemin {background:#043c25;width:80%;margin:auto;margin-top:2em;}
+#wat-h {color:white;font:60px normal;}
 #about-ul {max-width:55em;}
 #about-ul .form-group {margin-bottom:1em;padding:.5em;overflow:hidden;background:url(img/wtrans.png);text-indent:.6em;border-radius:.2em;}
 #about-ul a {color:white;font:25px normal;}
-#dntjum {overflow:hidden;background:url(img/btrans.png);}
-#donatedv {background:url(img/ai3.jpg);background-size:100% 100%;}
+#dntjum {overflow:hidden;background:transparent;}
+#donatedv {background:#fff9dc}
 #dont-h {font:80px normal;}
-#dnth-p {text-indent:1em;font:28px normal;color:#ffe2ae;}
-#dont-txt {font:23px normal;color:white;text-indent:1em;}
+#dnth-p {text-indent:1em;font:28px normal;color:#713f00;}
+#dont-txt {font:23px normal;color:#713f00;text-indent:1em;}
 #dtfmd {overflow:hidden;background:url(img/wtrans.png);}
 #dotform {overflow:hidden;background:url(img/wtrans2.png);}
 #popa {position:fixed;z-index:99;background:url(img/gtrans.png);}
@@ -100,11 +100,14 @@ addEvent(window,'load',function(){
 #acct-keys .btn {margin:1em;}
 #dnact-hd {background:url(img/btrans.png);margin:0;overflow:hidden;}
 .fa, .fab, .fad, .fal, .far, .fas {-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing:antialiased;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;line-height: 1;}
-#icosp {margin-right:.3em;font-size:55px;}
+#icosp {margin-right:.3em;font-size:50px;}
 #socialbox {position:relative;margin:auto;width:80%;}
 #soc-h {color:white;font:30px normal;}
-#soc-buts {background:transparent;}
-#soc-buts a {color:white;margin-left:3em;}
+#soc-buts {background:transparent;width:100%;}
+#soc-buts a {color:white;margin:1em;display:block;max-width:20em;}
+#car-imd {width:100%;overflow:hidden;height:12em;margin:auto;padding:0;}
+#car-img {width:100%;height:100%;}
+
 </style>
 </head>
 <body>
