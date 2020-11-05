@@ -244,7 +244,7 @@ var contactdv=function(){
 	
 }
 var welnote=function(){
-	var h=pah('wen-hd',[hea(1,'WELCOME','wel-h')]),rd=jum('welnote',[h,par(wnte,'welpar')]);
+	var h=pah('wen-hd',[rigiya('lm','',[hea(1,'WELCOME','wel-h')]),rigiya('sx','',[hea(6,'WELCOME','wel-sh')])]),rd=jum('welnote',[h,par(wnte,'welpar')]);
 	return rd;
 }
 var carbox=function(t,im){
@@ -267,7 +267,7 @@ var navi=function(m){
 	return dr;
 }
 var homedv=function(){
-	var hd=pagehed(0,'hme-hd'),ah=pah('wen-hd',[hea(1,'Aims/Objectives','aic-h')]),aic=jum('myaim',[ah]),ws=colbox('hme-ws',12,12,12,12,[welnote(),aic,morecont()]),rd=colbox('hmediv',12,12,12,12,[hd,ws]),a=[],cr,ia=['img/ai7.jpg','img/ai1.jpg','img/ai3.jpg'],ca=cta(AA);
+	var hd=pagehed(0,'hme-hd'),ah=pah('wen-hd',[rigiya('lm','',[hea(1,'Aims/Objectives','aic-h')]),rigiya('sx','',[hea(5,'Aims/Objectives','aic-sh')])]),aic=jum('myaim',[ah]),ws=colbox('hme-ws',12,12,12,12,[welnote(),aic,morecont()]),rd=colbox('hmediv',12,12,12,12,[hd,ws]),a=[],cr,ia=['img/ai7.jpg','img/ai1.jpg','img/ai3.jpg'],ca=cta(AA);
 	fit2scrn(rd);
 	ffo.hme=rd;
 	for(var i in ca)APP(aic,carbox(ca[i],ia[i]));

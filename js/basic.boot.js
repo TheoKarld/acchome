@@ -222,7 +222,7 @@ var but=function(v,t,id,c,ro){
 	return d;
 }
 var rigiya=function(d,id,y){
-	var o={'lg':'well hidden-md hidden-sm hidden-xs','md':'well hidden-lg hidden-sm hidden-xs','sm':'well hidden-md hidden-lg hidden-xs','xs':'well hidden-md hidden-sm hidden-lg',sx:'well hidden-md hidden-lg',lm:'well hidden-sm hidden-xs'},rd=DIV(id,o[d]);
+	var o={lg:'well hidden-md hidden-sm hidden-xs',md:'well hidden-lg hidden-sm hidden-xs',sm:'well hidden-md hidden-lg hidden-xs','xs':'well hidden-md hidden-sm hidden-lg',sx:'well hidden-md hidden-lg',lm:'well hidden-sm hidden-xs'},rd=DIV(id,o[d]);
 	if(y)feedme(rd,y);
 	return rd;
 }
