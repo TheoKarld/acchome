@@ -91,7 +91,7 @@ var socialbox=function(){
 	
 }
 var donacct=function(){
-	var h=pah('dnact-hd',[hea(1,'thank you for supporting our objectives.','act-h')]),pk=jum('acct-keys',[anc(pu,'continue to PayPal','btn btn-lg btn-danger','gotopaypal',{target:'_blank'}),but('done','button','actdone','btn btn-lg btn-primary')]),emd=jum('act-emd',[par('For now we recieve donations strictly through PayPal, so below is our PayPal associated email.','act-eh'),par(ppe,'act-email')]),rd=colbox('donacct',12,12,12,12,[h,emd,pk,morecont()]);
+	var h=pah('dnact-hd',[par([img('img/logo2.png','dact-im')],'dact-hi'),rigiya('lm','',[hea(1,'Thank you for supporting our objectives.','act-h')]),rigiya('sx','',[hea(1,'Thank you for supporting our objectives.','act-sh')])]),pk=jum('acct-keys',[anc(pu,'continue to PayPal','btn btn-lg btn-danger','gotopaypal',{target:'_blank'}),but('done','button','actdone','btn btn-lg btn-primary')]),emd=jum('act-emd',[rigiya('lm','',[par('For now we recieve donations strictly through PayPal, so below is our PayPal associated email.','act-eh'),par(ppe,'act-email')]),rigiya('sx','',[par('For now we recieve donations strictly through PayPal, so below is our PayPal associated email.','act-seh'),par(ppe,'act-semail')])]),rd=colbox('donacct',12,12,12,12,[h,emd,pk,morecont()]);
 	ffo.dntact=rd;
 	fit2scrn(rd);
 	
